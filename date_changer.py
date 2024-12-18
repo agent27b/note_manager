@@ -2,11 +2,11 @@
 username = input("Введите имя пользователя: ")
 title = input("Введите заголовок заметки: ")
 content = input("Введите описание заметки: ")
-status = input("Введите статус заметки (например, 'Активна', 'Выполнена'): ")
+status = input("Введите статус заметки ('Активна', 'Выполнена':")
 created_date = input("Введите дату создания заметки в формате 'день-месяц-год': ")
 issue_date = input("Введите дату истечения заметки в формате 'день-месяц-год': ")
 
-# Переводим строку в дату
+# Переводим строки в дату
 from datetime import datetime
 temp_created_date = datetime.strptime(created_date, "%d-%m-%Y").date()
 temp_issue_date = datetime.strptime(issue_date, "%d-%m-%Y").date()
